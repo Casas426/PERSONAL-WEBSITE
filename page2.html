@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2 - Categories</title>
+    <link rel="stylesheet" href="stylecategory.css">
+    
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="page2.html">Page 2</a>
+            <a href="page3.html">Page 3</a>
+            <a href="page4.html">Page 4</a>
+            <a href="page5.html">Page 5</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="page2.html">Page 2</a>
-        <a href="page3.html">Page 3</a>
-        <a href="page4.html">Page 4</a>
-        <a href="page5.html">Page 5</a>
-    </nav>
+    <header>
+        <h1>Game Critiq</h1>
+        <p>Reviews, Previews, and News on the Latest Games</p>
+    </header>
 
-    <h1>Categories</h1>
-    <p>Browse through the various categories of games and reviews:</p>
+    <div class="content">
+        <section class="game-categories">
+            <h2>Game Categories</h2>
+            <div class="categories-container">
+                <div><a href="action.html">Action</a></div>
+                <div><a href="adventure.html">Adventure</a></div>
+                <div><a href="strategy.html">Strategy</a></div>
+                <div><a href="shooter.html">Shooter</a></div>
+            </div>
+        </section>
 
-    <section id="categories">
-        <h2>Game Categories</h2>
-        <ul>
-            <li><a href="action.html">Action</a></li>
-            <li><a href="adventure.html">Adventure</a></li>
-            <li><a href="strategy.html">Strategy</a></li>
-            <li><a href="roleplaying.html">Role-playing</a></li>
-            <li><a href="shooter.html">Shooter</a></li>
-            <li><a href="sports.html">Sports</a></li>
-            <li><a href="simulation.html">Simulation</a></li>
-        </ul>
-    </section>
-
-    <section id="featured-image">
-        <h2>Game of the year</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQUrZ4MmVN65p5vx8hZN__rEhGFnZzYopl6aDqC3lMiyObGQsCWGhTHXg1&s=10" alt="Shrek">
-        <p>This image is a placeholder for a featured image related to the category.</p>
-    </section>
+        <section id="featured-image" style="text-align: center; padding: 20px;">
+            <h2>Game of the Year</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQUrZ4MmVN65p5vx8hZN__rEhGFnZzYopl6aDqC3lMiyObGQsCWGhTHXg1&s=10" alt="Shrek" style="max-width: 100%; border-radius: 8px;">
+            <p>This image is a placeholder for a featured image related to the category.</p>
+        </section>
+    </div>
 
     <footer>
         <p>2024 Game Critiq.</p>
     </footer>
-
 </body>
 </html>
