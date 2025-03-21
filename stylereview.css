@@ -8,12 +8,6 @@ body {
     font-family: sans-serif;
 }
 
-header {
-    background: #4a3f60;
-    padding: 15px;
-    text-align: center;
-}
-
 .content {
     flex: 1;
     padding: 20px;
@@ -23,8 +17,8 @@ nav {
     display: flex;
     justify-content: center;
     gap: 15px;
-    background: #4a3f60;
     padding: 15px;
+    background: #4a3f60;
 }
 
 nav a {
