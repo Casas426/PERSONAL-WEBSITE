@@ -28,9 +28,8 @@ nav ul li a {
 header {
     text-align: center;
     padding: 20px;
-    background: #3b3b4f; /* Updated to match the previous header */
-    color: white;
-}
+    background: #4a3f60;
+    color: #ffffff;
 }
 .grid-container {
     display: grid;
