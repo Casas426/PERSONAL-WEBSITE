@@ -72,6 +72,13 @@ h1, h2 {
     border-radius: 10px;
 }
 
+.grid-container div img {
+    width: 100%; /* Ensures the image fills the grid container */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image covers the entire space without distortion */
+    border-radius: 8px; /* Keeps the rounded corners */
+}
+
 .news {
     grid-column: span 2;
     background: #3b3b4f;
