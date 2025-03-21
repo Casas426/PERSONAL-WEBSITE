@@ -5,24 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Review - Game Critiq</title>
     <link rel="stylesheet" href="stylereview.css">
-    <script>
-        function postReview() {
-            let reviewText = document.getElementById("reviewInput").value;
-            let reviewList = document.getElementById("reviewList");
-
-            if (reviewText.trim() === "") {
-                alert("Please enter a review before submitting.");
-                return;
-            }
-
-            let reviewItem = document.createElement("div");
-            reviewItem.classList.add("review");
-            reviewItem.innerHTML = `<p>${reviewText}</p>`;
-            reviewList.appendChild(reviewItem);
-
-            document.getElementById("reviewInput").value = ""; // Clear input field
-        }
-    </script>
 </head>
 <body>
 
@@ -52,6 +34,25 @@
     <footer>
         <p>2024 Game Critiq. All rights reserved.</p>
     </footer>
+
+    <script>
+        function postReview() {
+            let reviewText = document.getElementById("reviewInput").value;
+            let reviewList = document.getElementById("reviewList");
+
+            if (reviewText.trim() === "") {
+                alert("Please enter a review before submitting.");
+                return;
+            }
+
+            let reviewItem = document.createElement("div");
+            reviewItem.classList.add("review");
+            reviewItem.innerHTML = `<span class="username">Anonymous</span><p>${reviewText}</p>`;
+            reviewList.appendChild(reviewItem);
+
+            document.getElementById("reviewInput").value = ""; // Clear input field
+        }
+    </script>
 
 </body>
 </html>
