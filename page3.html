@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Review - Game Critiq</title>
     <link rel="stylesheet" href="stylereview.css">
+    <script>
+        function postReview() {
+            let reviewText = document.getElementById("reviewInput").value;
+            let reviewList = document.getElementById("reviewList");
+
+            if (reviewText.trim() === "") {
+                alert("Please enter a review before submitting.");
+                return;
+            }
+
+            let reviewItem = document.createElement("div");
+            reviewItem.classList.add("review");
+            reviewItem.innerHTML = `<p>${reviewText}</p>`;
+            reviewList.appendChild(reviewItem);
+
+            document.getElementById("reviewInput").value = ""; // Clear input field
+        }
+    </script>
 </head>
 <body>
 
@@ -19,12 +37,18 @@
     <h1>Create a New Game Review</h1>
 
     <p>Write a review about your favorite game. Be sure to include your thoughts and a rating!</p>
-    <form action="submit_review.html" method="POST">
+    <form onsubmit="event.preventDefault(); postReview();">
         <fieldset>
             <legend>Game Review Form</legend>
-            <p>WIP</p>
+            <textarea id="reviewInput" rows="4" cols="50" placeholder="Write your review here..."></textarea>
+            <br>
+            <button type="submit">Post Review</button>
         </fieldset>
     </form>
+
+    <h2>Recent Reviews</h2>
+    <div id="reviewList"></div>
+
     <footer>
         <p>2024 Game Critiq. All rights reserved.</p>
     </footer>
